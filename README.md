@@ -12,9 +12,10 @@ This is a Mod Template for getting started with creating a mod for MT2 using Tra
 First, get cookiecutter
 `pip install cookiecutter`
 
-Alternatively, if you have downloaded the template, we have provided a dev container
+Once cookiecutter is installed, create your template by running
+`cookiecutter https://github.com/Monster-Train-2-Modding-Group/Mod-Template.git`
 
-## Fork
+Alternatively, if you have downloaded the template, we have provided a dev container that you can run in Visual Studio Code. To get started you can run:
+`cookiecuter ./`
 
-1. Go on Github and Fork the Project
-2. Once forked and dowloaded locally, install cookiecutter
+Your mod is now ready for programming.

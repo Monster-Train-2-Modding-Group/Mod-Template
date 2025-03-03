@@ -12,9 +12,9 @@ permissions:
 
 env:
   base_version: '0.1.0'
-  mod_namespace: '{{cookiecutter.project_name}}'
+  mod_namespace: '{{cookiecutter.mod_namespace}}'
   mod_name: '{{cookiecutter.project_slug}}'
-
+{% raw %}
 jobs:
   build:
     runs-on: windows-latest
@@ -52,3 +52,4 @@ jobs:
       - name: Publish to Thunderstore
         run: tcli publish --file ${{ env.mod_namespace }}-${{ env.mod_name }}-*.zip --token ${{ secrets.THUNDERSTORE_TOKEN }}
         if: startsWith(github.ref, 'refs/tags/')
+{% endraw %}

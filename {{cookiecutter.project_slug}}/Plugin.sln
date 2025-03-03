@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.13.35818.85 d17.13
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Plugin", "Plugin\Plugin.csproj", "{DBF0D04A-08A9-4E99-8FF2-FDD123120446}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "{{cookiecutter.project_slug}}.Plugin", "{{cookiecutter.project_slug}}.Plugin\{{cookiecutter.project_slug}}.Plugin.csproj", "{DBF0D04A-08A9-4E99-8FF2-FDD123120446}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
