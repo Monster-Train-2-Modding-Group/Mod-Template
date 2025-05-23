@@ -37,11 +37,18 @@ namespace {{cookiecutter.project_slug}}.Plugin
                 MyPluginInfo.PLUGIN_GUID,
                 c =>
                 {
-                    c.AddJsonFile("plugin.json");
+                    // Be sure to include all of your json files if you add more.
+                    c.AddMergedJsonFile(
+                        "json/plugin.json"
+                    );
                 }
             );
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
+            
+            // Uncomment if you need harmony patches, if you are writing your own custom effects.
+            //var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
+            //harmony.PatchAll();
         }
     }
 }
