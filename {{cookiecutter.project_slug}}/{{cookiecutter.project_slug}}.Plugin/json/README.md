@@ -15,6 +15,7 @@ json/
   units/ - Unit cards included in the clan
 
 Be sure when you add a json file to add it to your Plugin.cs AddMergedJsonFile line otherwise it won't be loaded!
+If you add a folder make sure to include it to be copied in the csproj file. The csproj file will only copy json files in this directory and not ones found in subdirectories.
 
 When you build your mod in the github codespace (or Visual Studio if running locally) simply copy the built files into the BepinEx/plugins directory.
 
