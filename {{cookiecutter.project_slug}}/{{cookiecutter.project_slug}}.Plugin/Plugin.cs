@@ -38,6 +38,8 @@ namespace {{cookiecutter.project_slug}}.Plugin
                 c =>
                 {
                     // Be sure to include all of your json files if you add more.
+                    // Be sure to update the project configuration if you include more folders
+                    //   the project only copies json files in the json folder and not in subdirectories.
                     c.AddMergedJsonFile(
                         "json/plugin.json"
                     );
