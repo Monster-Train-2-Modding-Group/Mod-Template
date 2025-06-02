@@ -18,6 +18,7 @@ using TrainworksReloaded.Base.Trigger;
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Impl;
 using TrainworksReloaded.Core.Interfaces;
+using TrainworksReloaded.Core.Extensions;
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
