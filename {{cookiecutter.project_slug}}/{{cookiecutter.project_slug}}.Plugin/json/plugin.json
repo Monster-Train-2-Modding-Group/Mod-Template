@@ -20,7 +20,7 @@
             ],
             "traits": [
                 {
-                    "id": "@Exhaust"
+                    "id": "@Consume"
                 }
             ]
         }
