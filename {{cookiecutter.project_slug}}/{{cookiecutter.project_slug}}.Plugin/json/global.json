@@ -2,7 +2,7 @@
   "traits": [
     {
       "id": "Consume",
-      "name": "CardTraitExhaustState",
+      "name": "CardTraitExhaustState"
     }
   ]
 }
