@@ -12,7 +12,7 @@
                 "english": "Deal [effect0.power] damage",
                 "french": "Inflige <nobr>[effect0.power] DGT</nobr>"
             },
-            "card_art_reference": "@Gasoline",
+            "card_art": "@Gasoline",
             "effects": [
                 {
                     "id": "@DealFiveDamage"
