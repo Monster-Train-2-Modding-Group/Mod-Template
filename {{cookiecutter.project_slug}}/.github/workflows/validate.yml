@@ -5,12 +5,12 @@ on:
     branches:
       - main
     paths:
-      - schemas/**
+      - {{cookiecutter.project_slug}}.Plugin/json/**
   pull_request:
     branches:
       - main
     paths:
-      - schemas/**
+      - {{cookiecutter.project_slug}}.Plugin/json/**
 
 jobs:
   validate:
