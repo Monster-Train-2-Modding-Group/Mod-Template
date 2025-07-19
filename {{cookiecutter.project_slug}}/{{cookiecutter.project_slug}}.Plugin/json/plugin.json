@@ -36,7 +36,11 @@
         {
             "id": "Gasoline",
             "type": "card_art",
-            "sprite": "@Gasoline"
+            "extensions": {
+                "card_art": {
+                    "sprite": "@Gasoline"
+                }
+            }
         }
     ],
     "effects": [
