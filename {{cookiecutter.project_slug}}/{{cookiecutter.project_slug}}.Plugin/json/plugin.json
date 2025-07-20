@@ -3,7 +3,7 @@
     "cards": [
         {
             "id": "StarterFireStarter",
-            "override": true,
+            "override": "replace",
             "cost": 0,
             "names": {
                 "english": "Gas Cannister",
