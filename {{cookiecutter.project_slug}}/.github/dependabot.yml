@@ -20,5 +20,5 @@ registries:
   monster-train-packages:
     type: "nuget-feed"
     url: "https://nuget.pkg.github.com/Monster-Train-2-Modding-Group/index.json"
-    username: "${{secrets.DEPENDABOT_GITHUB_USERNAME}}"
-    password: "${{secrets.DEPENDABOT_GITHUB_TOKEN}}"
+    username: "${{ secrets.DEPENDABOT_GITHUB_USERNAME }}"
+    password: "${{ secrets.DEPENDABOT_GITHUB_TOKEN }}"
