@@ -16,6 +16,7 @@
     </PackageReference>
     <PackageReference Include="BepInEx.PluginInfoProps" Version="2.*" />
     <PackageReference Include="TrainworksReloaded.Base" Version="0.5.4" />
+    <PackageReference Include="Conductor" Version="0.2.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -27,4 +28,5 @@
     </None>
   </ItemGroup>
 </Project>
+
 
