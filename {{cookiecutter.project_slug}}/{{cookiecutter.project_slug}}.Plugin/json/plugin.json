@@ -14,16 +14,8 @@
                 "french": "Inflige <nobr>[effect0.power] DGT</nobr>"
             },
             "card_art": "@Gasoline",
-            "effects": [
-                {
-                    "id": "@DealFiveDamage"
-                }
-            ],
-            "traits": [
-                {
-                    "id": "@Consume"
-                }
-            ]
+            "effects": ["@DealFiveDamage"],
+            "traits": ["@Consume"]
         }
     ],
     "sprites": [
