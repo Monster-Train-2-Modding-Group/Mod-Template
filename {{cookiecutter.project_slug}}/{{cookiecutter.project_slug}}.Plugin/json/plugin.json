@@ -21,7 +21,7 @@
     "sprites": [
         {
             "id": "Gasoline",
-            "path": "textures/gas.png"
+            "path": "textures/card_art/gas.png"
         }
     ],
     "game_objects": [
