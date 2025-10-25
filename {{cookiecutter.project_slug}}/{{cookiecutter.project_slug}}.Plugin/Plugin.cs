@@ -15,29 +15,34 @@ namespace {{cookiecutter.project_slug}}.Plugin
         public void Awake()
         {
             Logger = base.Logger;
-
+{% if cookiecutter.generate_minimal_clan == 'yes' %}
             var builder = Railhead.GetBuilder();
             builder.Configure(
                 MyPluginInfo.PLUGIN_GUID,
                 c =>
                 {
                     // Be sure to include any new json files if you add more.
-{% if cookiecutter.generate_minimal_clan == 'yes' %}
                     c.AddMergedJsonFile(
                         "json/plugin.json",
                         "json/global.json"
                     );
-{% else %}
-                    c.AddMergedJsonFile(
-                        "json/plugin.json",
-                        "json/global.json"
-                    );
-{% endif %}
                 }
             );
-
+{% else %}
+            var builder = Railhead.GetBuilder();
+            builder.Configure(
+                MyPluginInfo.PLUGIN_GUID,
+                c =>
+                {
+                    // Be sure to include any new json files if you add more.
+                    c.AddMergedJsonFile(
+                        "json/plugin.json",
+                        "json/global.json"
+                    );
+                }
+            );
+{% endif %}
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-                
 {% if cookiecutter.enable_harmony_patching == 'yes' %}            
             var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
             harmony.PatchAll();
