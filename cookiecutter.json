@@ -6,5 +6,5 @@
     "generate_minimal_clan": ["no", "yes"],
     "enable_harmony_patching": ["no", "yes"],
 
-    "project_slug": "{{ cookiecutter.project_name|replace(' ', '_')|replace('-', '_')|lower }}"
+    "project_slug": "{{ cookiecutter.project_name|replace(' ', '_')|replace('-', '_') }}",
 }
