@@ -1,9 +1,10 @@
 {
-    "======================== INFO =======================": " ",
-    "project_name": "Project Name",
-    "project_slug": "{{ cookiecutter.project_name|replace(' ', '_')|replace('-', '_') }}",
-    "description": "Short description",
+    "project_name": "Enter your mod name",
+    "description": "Short description of your mod",
+    "author": "Your name",
+    "mod_namespace": "Your namespace on Thunderstore",
+    "generate_minimal_clan": ["no", "yes"],
+    "enable_harmony_patching": ["no", "yes"],
 
-    "author": "Your Name",
-    "mod_namespace": "My Namespace on Thunderstore"
+    "project_slug": "{{ cookiecutter.project_name|replace(' ', '_')|replace('-', '_')|lower }}"
 }

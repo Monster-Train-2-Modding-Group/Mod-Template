@@ -3,7 +3,7 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "{{cookiecutter.mod_namespace}}"
-name = "{{cookiecutter.project_name}}"
+name = "{{cookiecutter.project_slug}}"
 versionNumber = "0.1.0"
 description = "{{cookiecutter.description}}"
 websiteUrl = "https://thunderstore.io"

@@ -1,26 +1,8 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
-using I2.Loc;
-using Microsoft.Extensions.Configuration;
-using ShinyShoe.Logging;
-using SimpleInjector;
-using TrainworksReloaded.Base;
-using TrainworksReloaded.Base.Card;
-using TrainworksReloaded.Base.CardUpgrade;
-using TrainworksReloaded.Base.Character;
-using TrainworksReloaded.Base.Class;
-using TrainworksReloaded.Base.Effect;
-using TrainworksReloaded.Base.Localization;
-using TrainworksReloaded.Base.Prefab;
-using TrainworksReloaded.Base.Trait;
-using TrainworksReloaded.Base.Trigger;
 using TrainworksReloaded.Core;
-using TrainworksReloaded.Core.Impl;
-using TrainworksReloaded.Core.Interfaces;
 using TrainworksReloaded.Core.Extensions;
-using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 namespace {{cookiecutter.project_slug}}.Plugin
 {
@@ -28,9 +10,10 @@ namespace {{cookiecutter.project_slug}}.Plugin
     public class Plugin : BaseUnityPlugin
     {
         internal static new ManualLogSource Logger = new(MyPluginInfo.PLUGIN_GUID);
+        
+        // Plugin startup logic. This function is automatically called when your plugin initializes
         public void Awake()
         {
-            // Plugin startup logic
             Logger = base.Logger;
 
             var builder = Railhead.GetBuilder();
@@ -38,21 +21,31 @@ namespace {{cookiecutter.project_slug}}.Plugin
                 MyPluginInfo.PLUGIN_GUID,
                 c =>
                 {
-                    // Be sure to include all of your json files if you add more.
-                    // Be sure to update the project configuration if you include more folders
-                    //   the project only copies json files in the json folder and not in subdirectories.
+                    // Be sure to include any new json files if you add more.
+{% if cookiecutter.generate_minimal_clan == 'yes' %}
                     c.AddMergedJsonFile(
                         "json/plugin.json",
                         "json/global.json"
                     );
+{% else %}
+                    c.AddMergedJsonFile(
+                        "json/plugin.json",
+                        "json/global.json"
+                    );
+{% endif %}
                 }
             );
 
             Logger.LogInfo($"Plugin {MyPluginInfo.PLUGIN_GUID} is loaded!");
-            
-            // Uncomment if you need harmony patches, if you are writing your own custom effects.
+                
+{% if cookiecutter.enable_harmony_patching == 'yes' %}            
+            var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
+            harmony.PatchAll();
+{% else %}
+            // Uncomment if you need Harmony Patch support.
             //var harmony = new Harmony(MyPluginInfo.PLUGIN_GUID);
             //harmony.PatchAll();
+{% endif %}
         }
     }
 }
