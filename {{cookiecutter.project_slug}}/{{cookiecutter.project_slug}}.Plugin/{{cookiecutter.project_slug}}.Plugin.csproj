@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="json/**.json">
+    <None Update="json/**/*.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="textures/**">
@@ -32,5 +32,6 @@
     </None>
   </ItemGroup>
 </Project>
+
 
 
