@@ -6,7 +6,8 @@ I find its best to organize the file structure like so.
 
 json/
   * plugin.json - Top level json file. define your clan here, along with the banner icon, map node, card pools, subtypes, and champion specification
-  * global.json - (Left as an example and the fact that AddMergedJson requires at least two json files. Currently this defines a Consume trait that can be easily reused across json files you only need to define it once. Also useful to put subtypes here as well.)
+  * global.json - (Left as an example and the fact that AddMergedJson requires at least two json files. Currently this defines a Consume trait that can be easily reused across json files you only need to define it once.)
+  * clan/ - Define the clan definition along with: the banner, card frame style, and subtypes
   * champions/ - Define the two champion cards data here, along with the champion upgrade paths
   * enhancers/ - Define the shop upgrades this clan gets
   * equipment/ - Equipment cards
@@ -16,7 +17,7 @@ json/
   * units/ - Unit cards included in the clan
 
 Be sure when you add a json file to add it to your Plugin.cs AddMergedJsonFile line otherwise it won't be loaded!
-If you add a folder make sure to include it to be copied in the csproj file. The csproj file will only copy json files in this directory and not ones found in subdirectories.
 
 When you build your mod in the github codespace (or Visual Studio if running locally) simply copy the built files into the BepinEx/plugins directory.
+
 
