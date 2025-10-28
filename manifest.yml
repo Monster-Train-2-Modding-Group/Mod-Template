@@ -1,0 +1,85 @@
+features:
+  - name: generate_minimal_clan
+    enabled: {{cookiecutter.generate_minimal_clan|lower}}
+    inverted: false
+    resources:
+      - {{cookiecutter._project_slug}}.Plugin/json/artifacts/basic_artifact.json
+      - {{cookiecutter._project_slug}}.Plugin/json/champions/basic_champion.json
+      - {{cookiecutter._project_slug}}.Plugin/json/clan/clan.json
+      - {{cookiecutter._project_slug}}.Plugin/json/clan/clan_banner.json
+      - {{cookiecutter._project_slug}}.Plugin/json/clan/clan_card_frame.json
+      - {{cookiecutter._project_slug}}.Plugin/json/clan/clan_subtypes.json
+      - {{cookiecutter._project_slug}}.Plugin/json/enhancers/basic_enhancer.json
+      - {{cookiecutter._project_slug}}.Plugin/json/equipment/basic_equipment.json
+      - {{cookiecutter._project_slug}}.Plugin/json/rooms/basic_room.json
+      - {{cookiecutter._project_slug}}.Plugin/json/spells/basic_common.json
+      - {{cookiecutter._project_slug}}.Plugin/json/spells/basic_starter.json
+      - {{cookiecutter._project_slug}}.Plugin/json/units/basic_ability_unit.json
+      - {{cookiecutter._project_slug}}.Plugin/json/units/basic_banner_unit.json
+      - {{cookiecutter._project_slug}}.Plugin/json/units/basic_draft_unit.json
+      - {{cookiecutter._project_slug}}.Plugin/textures/banners/BasicBanner_Disabled.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/banners/BasicBanner_Enabled.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/banners/BasicBanner_Frozen.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/banners/BasicBanner_MapIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/banners/BasicBanner_VisitedDisabled.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/banners/ClanBannerMinimapIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/BasicAbilityUnit.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/BasicBannerUnit.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/BasicCommonSpell.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/BasicDraftUnit.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/BasicEquipment.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/BasicRoom.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/ChampionA.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/ChampionAStarter.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_borders/BasicCardBorderEquipmentRoom.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_borders/BasicCardBorderSpell.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_borders/BasicCardBorderUnit.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/character_art/BasicAbilityUnit.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/character_art/BasicBannerUnit.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/character_art/BasicDraftUnit.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/character_art/ChampionA.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/BasicClanCardDraft.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/BasicClanLargeIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/BasicClanMediumIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/BasicClanSilhouetteIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/BasicClanSmallIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/BasicEquipmentIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/BasicRoomIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/Basicstone.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/ChampionA.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/ChampionALocked.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/ChampionAPortrait.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/relic_art/BasicArtifactIcon.png
+      - {{cookiecutter._project_slug}}.Plugin/textures/relic_art/BasicArtifactSmallIcon.png
+
+  - name: basic_mod_setup
+    enabled: {{cookiecutter.generate_minimal_clan|lower}}
+    inverted: true
+    resources:
+      - {{cookiecutter._project_slug}}.Plugin/json/plugin.json
+
+  - name: remove_stubs
+    enabled: no
+    inverted: false
+    resources:
+      - {{cookiecutter._project_slug}}.Plugin/code/CardEffects/STUB
+      - {{cookiecutter._project_slug}}.Plugin/code/CardTraits/STUB
+      - {{cookiecutter._project_slug}}.Plugin/code/RelicEffects/STUB
+      - {{cookiecutter._project_slug}}.Plugin/code/RoomModifiers/STUB
+      - {{cookiecutter._project_slug}}.Plugin/code/StatusEffects/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/artifacts/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/champions/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/clan/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/enhancers/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/equipment/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/rooms/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/spells/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/status_effects/STUB
+      - {{cookiecutter._project_slug}}.Plugin/json/units/STUB
+      - {{cookiecutter._project_slug}}.Plugin/patches/STUB
+      - {{cookiecutter._project_slug}}.Plugin/textures/banners/STUB
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_art/STUB
+      - {{cookiecutter._project_slug}}.Plugin/textures/card_borders/STUB
+      - {{cookiecutter._project_slug}}.Plugin/textures/character_art/STUB
+      - {{cookiecutter._project_slug}}.Plugin/textures/icons/STUB
+      - {{cookiecutter._project_slug}}.Plugin/textures/relic_art/STUB

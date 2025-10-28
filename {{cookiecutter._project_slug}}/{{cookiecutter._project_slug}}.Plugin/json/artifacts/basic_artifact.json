@@ -1,0 +1,71 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Monster-Train-2-Modding-Group/Trainworks-Reloaded/refs/heads/main/schemas/base.json",
+  "relics": [
+    {
+      "id": "BasicArtifact",
+      "type": "collectable",
+      "names": {
+        "english": "Basic Artifact"
+      },
+      "descriptions": {
+        "english": "<b>Basic</b> units get [multistrike] [effect0.upgrade.status0.power]."
+      },
+      "lore_tooltips": [
+        {
+          "english": "Basic artifact."
+        }
+      ],
+      "lore_style": "herzal",
+      "relic_effects": [ "@AddMultistrikeToBasicUnits" ],
+      "icon": "@BasicArtifactIcon",
+      "icon_small": "@BasicArtifactSmallIcon",
+      "extensions": [
+        {
+          "collectable": {
+            "class": "@ClassBasic",
+            "pools": [ "MegaRelicPool" ],
+            "rarity": "uncommon"
+          }
+        }
+      ]
+    }
+  ],
+  "relic_effects": [
+    {
+      "id": "AddMultistrikeToBasicUnits",
+      "name": "RelicEffectAddTempUpgrade",
+      "source_team": "monsters",
+      "param_upgrade": "@MultistrikeForBasicUnits"
+    }
+  ],
+  "upgrades": [
+    {
+      "id": "MultistrikeForBasicUnits",
+      "is_unique": true,
+      "status_effect_upgrades": [
+        {
+          "status": "multistrike",
+          "count": 1
+        }
+      ],
+      "filters": [ "@OnlyBasicUnits" ]
+    }
+  ],
+  "upgrade_masks": [
+    {
+      "id": "OnlyBasicUnits",
+      "card_type": "monster",
+      "required_subtypes": ["@BasicSubtype"]
+    }
+  ],
+  "sprites": [
+    {
+      "id": "BasicArtifactIcon",
+      "path": "textures/relic_art/BasicArtifactIcon.png"
+    },
+    {
+      "id": "BasicArtifactSmallIcon",
+      "path": "textures/relic_art/BasicArtifactSmallIcon.png"
+    }
+  ]
+}
