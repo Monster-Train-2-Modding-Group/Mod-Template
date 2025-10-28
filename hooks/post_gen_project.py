@@ -10,8 +10,8 @@ def delete_resources_for_disabled_features():
     with open(MANIFEST) as manifest_file:
         manifest = yaml.load(manifest_file)
         for feature in manifest['features']:
-            if (feature['enabled'] == 'no' and not feature['inverted']) or 
-               (feature['enabled'] == 'yes' and feature['inverted']):
+            if ((feature['enabled'] == 'no' and not feature['inverted']) or 
+               (feature['enabled'] == 'yes' and feature['inverted'])):
                 
                 print "removing resources for {} feature {}...".format('enabled' if feature['inverted'] else 'disabled', feature['name'])
                 for resource in feature['resources']:
