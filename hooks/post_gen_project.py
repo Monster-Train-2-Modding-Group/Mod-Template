@@ -2,6 +2,7 @@
 import os
 import shutil
 import yaml
+from pathlib import Path
 
 
 def delete_resources_for_disabled_features():
