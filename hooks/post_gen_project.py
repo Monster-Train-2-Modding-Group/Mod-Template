@@ -3,11 +3,11 @@ import os
 import shutil
 import yaml
 
-MANIFEST = "manifest.yml"
-
 
 def delete_resources_for_disabled_features():
-    with open(MANIFEST) as manifest_file:
+    script_dir = Path(__file__).resolve().parent
+    manifest_path = script_dir / "manifest.yml"
+    with open(manifest_path) as manifest_file:
         manifest = yaml.load(manifest_file)
         for feature in manifest['features']:
             if ((feature['enabled'] == 'no' and not feature['inverted']) or 
