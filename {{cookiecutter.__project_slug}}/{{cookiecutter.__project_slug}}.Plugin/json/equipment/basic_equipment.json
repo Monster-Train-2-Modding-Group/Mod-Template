@@ -6,10 +6,12 @@
       "cost": 2,
       "card_type": "equipment",
       "names": {
-        "english": "Basic Equipment"
+        "english": "Basic Equipment",
+        "chinese": "示例装备"
       },
       "descriptions": {
-        "english": "[effect0.upgrade.bonussize][capacity]. Cannot reduce [capacity] below 1."
+        "english": "[effect0.upgrade.bonussize][capacity]. Cannot reduce [capacity] below 1.",
+        "chinese": "[effect0.upgrade.bonussize][capacity]。无法将[capacity]降到低于1。"
       },
       "rarity": "uncommon",
       "targets_room": true,
@@ -30,7 +32,8 @@
       ],
       "lore_tooltips": [
         {
-          "english": "Example equipment. Equipment is available to acquire in events (Red Crown, Plague Doctor) and Truffles (FreeEquipmentMutatorPool). RoomAndEquipmentMerchant_EquipmentPool is required. EquipmentPoolNonEnemy is for Swordmaiden."
+          "english": "Example equipment. Equipment is available to acquire in events (Red Crown, Plague Doctor) and Truffles (FreeEquipmentMutatorPool). RoomAndEquipmentMerchant_EquipmentPool is required. EquipmentPoolNonEnemy is for Swordmaiden.",
+          "chinese": "这个装备也可以在事件中获得。RoomAndEquipmentMerchant_EquipmentPool是必选的。FreeEquipmentMutatorPool对应松露犬，EquipmentPoolNonEnemy对应持剑侍女。"
         }
       ]
     }

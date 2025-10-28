@@ -8,10 +8,12 @@
       "minimap_icon": "@ClanBannerMinimapIcon",
       "prefab": "@BasicClanMapIcon",
       "titles": {
-        "english": "Basic Banner"
+        "english": "Basic Banner",
+        "chinese": "示例战旗"
       },
       "descriptions": {
-        "english": "Gain a Basic Unit"
+        "english": "Gain a Basic Unit",
+        "chinese": "获得一个示例单位。"
       },
       "pools": [
         "RandomChosenMainClassUnit",
