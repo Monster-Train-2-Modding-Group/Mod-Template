@@ -10,7 +10,7 @@ features:
     enabled: {{cookiecutter.generate_minimal_clan|lower}}
     inverted: false
     resources:
-      - {{cookiecutter.__project_slug}}.Plugin/json/artifacts/basic_artifact.json
+      - {{cookiecutter.__project_slug}}.Plugin/json/relics/basic_artifact.json
       - {{cookiecutter.__project_slug}}.Plugin/json/champions/basic_champion.json
       - {{cookiecutter.__project_slug}}.Plugin/json/clan/clan.json
       - {{cookiecutter.__project_slug}}.Plugin/json/clan/clan_banner.json
@@ -64,6 +64,7 @@ features:
     inverted: true
     resources:
       - {{cookiecutter.__project_slug}}.Plugin/json/plugin.json
+      - {{cookiecutter.__project_slug}}.Plugin/textures/card_art/gas.png
 
   - name: remove_stubs
     enabled: no
@@ -74,7 +75,7 @@ features:
       - {{cookiecutter.__project_slug}}.Plugin/code/RelicEffects/STUB
       - {{cookiecutter.__project_slug}}.Plugin/code/RoomModifiers/STUB
       - {{cookiecutter.__project_slug}}.Plugin/code/StatusEffects/STUB
-      - {{cookiecutter.__project_slug}}.Plugin/json/artifacts/STUB
+      - {{cookiecutter.__project_slug}}.Plugin/json/relics/STUB
       - {{cookiecutter.__project_slug}}.Plugin/json/champions/STUB
       - {{cookiecutter.__project_slug}}.Plugin/json/clan/STUB
       - {{cookiecutter.__project_slug}}.Plugin/json/enhancers/STUB
@@ -100,23 +101,23 @@ def delete_resources_for_disabled_features():
     manifest = yaml.safe_load(MANIFEST_CONTENT)
 
     for feature in manifest['features']:
-        if ((feature['enabled'] == 'no' and not feature['inverted']) or
-           (feature['enabled'] == 'yes' and feature['inverted'])):
+        if ((not feature['enabled'] and not feature['inverted']) or
+           (feature['enabled'] and feature['inverted'])):
 
-            print("removing resources for {} feature {}...".format(
-                'enabled' if feature['inverted'] else 'disabled', feature['name']))
+            #print("removing resources for {} feature {}...".format(
+            #    'enabled' if feature['inverted'] else 'disabled', feature['name']))
             for resource in feature['resources']:
                 delete_resource(project_root / resource)
 
-    print("cleanup complete")
+    print("project setup successfully!")
 
 
 def delete_resource(resource):
     if resource.is_file():
-        print("removing file: {}".format(resource))
+        #print("removing file: {}".format(resource))
         resource.unlink()
     elif resource.is_dir():
-        print("removing directory: {}".format(resource))
+        #print("removing directory: {}".format(resource))
         shutil.rmtree(resource)
 
 
