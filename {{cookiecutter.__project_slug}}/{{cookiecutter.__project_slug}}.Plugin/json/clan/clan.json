@@ -4,13 +4,16 @@
     {
       "id": "ClassBasic",
       "titles": {
-        "english": "Basic"
+        "english": "Basic",
+        "chinese": "示例"
       },
       "descriptions": {
-        "english": "A basic minimal clan example as primary."
+        "english": "A basic minimal clan example as primary.",
+        "chinese": "示例氏族介绍。"
       },
       "subclass_descriptions": {
-        "english": "A basic minimal clan example as secondary."
+        "english": "A basic minimal clan example as secondary.",
+        "chinese": "示例氏族介绍。"
       },
       "icons": {
         "small": "@BasicClanSmallIcon",

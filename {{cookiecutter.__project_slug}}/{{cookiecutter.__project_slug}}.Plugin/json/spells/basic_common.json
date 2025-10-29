@@ -6,10 +6,12 @@
       "cost": 2,
       "card_type": "spell",
       "names": {
-        "english": "Common Card"
+        "english": "Common Card",
+        "chinese": "示例法术"
       },
       "descriptions": {
-        "english": "Apply [dazed] [effect0.status0.power] and [mute] [effect1.status0.power] to an enemy unit."
+        "english": "Apply [dazed] [effect0.status0.power] and [mute] [effect1.status0.power] to an enemy unit.",
+        "chinese": "对一个敌方单位施加[dazed] [effect0.status0.power] 和[mute] [effect1.status0.power]。"
       },
       "rarity": "common",
       "targets_room": true,
@@ -24,7 +26,8 @@
       "traits": ["@Consume"],
       "lore_tooltips": [
         {
-          "english": "Example common card."
+          "english": "Example common card.",
+          "chinese": "示例剧情文本。"
         }
       ]
     }
