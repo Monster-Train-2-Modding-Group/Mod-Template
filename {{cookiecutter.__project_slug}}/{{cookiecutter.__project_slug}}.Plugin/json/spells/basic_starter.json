@@ -11,7 +11,7 @@
       },
       "descriptions": {
         "english": "Deal [effect0.power] damage to an enemy unit.",
-        "chinese": "对一个敌方单位造成 {0} 点伤害。"
+        "chinese": "对一个敌方单位造成 [effect0.power] 点伤害。"
       },
       "rarity": "common",
       "targets_room": true,
