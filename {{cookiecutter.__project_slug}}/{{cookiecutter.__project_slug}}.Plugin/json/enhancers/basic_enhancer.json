@@ -5,10 +5,12 @@
       "id": "Basicstone",
       "type": "enhancer",
       "names": {
-        "english": "Basicstone"
+        "english": "Basicstone",
+        "chinese": "示例石"
       },
       "descriptions": {
-        "english": "Upgrade a unit with +[effect0.upgrade.bonusdamage][attack] +[effect0.upgrade.bonushp][health] and [effect0.upgrade.bonussize][capacity]."
+        "english": "Upgrade a unit with +[effect0.upgrade.bonusdamage][attack] +[effect0.upgrade.bonushp][health] and [effect0.upgrade.bonussize][capacity].",
+        "chinese": "升级一个单位，使其获得 +[effect0.upgrade.bonusdamage][attack]，+[effect0.upgrade.bonushp][health]，[effect0.upgrade.bonussize][capacity]。"
       },
       "relic_effects": [ "@BasicstoneEnhancer" ],
       "icon": "@BasicstoneIcon",
@@ -35,10 +37,12 @@
     {
       "id": "BasicstoneUpgrade",
       "titles": {
-        "english": "Basicstone"
+        "english": "Basicstone",
+        "chinese": "示例石"
       },
       "descriptions": {
-        "english": "+[bonusdamage][attack] +[bonushp][health] and [bonussize][capacity]."
+        "english": "+[bonusdamage][attack] +[bonushp][health] and [bonussize][capacity].",
+        "chinese": "获得 +[bonusdamage][attack]，+[bonushp][health]，[bonussize][capacity]。"
       },
       "icon": "@BasicstoneIcon",
       "bonus_damage": 20,

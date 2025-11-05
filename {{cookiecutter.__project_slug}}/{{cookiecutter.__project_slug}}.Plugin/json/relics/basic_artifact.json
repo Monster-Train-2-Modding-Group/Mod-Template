@@ -5,14 +5,17 @@
       "id": "BasicArtifact",
       "type": "collectable",
       "names": {
-        "english": "Basic Artifact"
+        "english": "Basic Artifact",
+        "chinese": "示例神器"
       },
       "descriptions": {
-        "english": "<b>Basic</b> units get [multistrike] [effect0.upgrade.status0.power]."
+        "english": "<b>Basic</b> units get [multistrike] [effect0.upgrade.status0.power].",
+        "chinese": "示例单位获得[multistrike] [effect0.upgrade.status0.power]。"
       },
       "lore_tooltips": [
         {
-          "english": "Basic artifact."
+          "english": "Basic artifact.",
+          "chinese": "示例剧情文本。"
         }
       ],
       "lore_style": "herzal",

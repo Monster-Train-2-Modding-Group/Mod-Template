@@ -7,10 +7,12 @@
             "cost": 0,
             "names": {
                 "english": "Gas Cannister",
+                "chinese": "气罐",
                 "french": "Le Starter of Fire"
             },
             "descriptions": {
                 "english": "Deal [effect0.power] damage",
+                "chinese": "造成 [effect0.power] 点伤害。",
                 "french": "Inflige <nobr>[effect0.power] DGT</nobr>"
             },
             "card_art": "@Gasoline",
