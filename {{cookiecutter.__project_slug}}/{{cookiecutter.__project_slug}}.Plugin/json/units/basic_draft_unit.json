@@ -61,19 +61,7 @@
       "type": "character_art",
       "extensions": {
         "character_art": {
-          "sprite": "@BasicDraftUnitCharacterSprite",
-          "transform": {
-            "position": {
-              "x": 0,
-              "y": 1.3,
-              "z": 0
-            },
-            "scale": {
-              "x": 1,
-              "y": 1,
-              "z": 1
-            }
-          }
+          "sprite": "@BasicDraftUnitCharacterSprite"
         }
       }
     }
