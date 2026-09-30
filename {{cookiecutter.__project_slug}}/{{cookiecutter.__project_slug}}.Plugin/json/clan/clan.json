@@ -15,6 +15,9 @@
         "english": "A basic minimal clan example as secondary.",
         "chinese": "示例氏族介绍。"
       },
+      "event_titles": {
+        "english": "<wonderous>Basic citizen</wonderous>"
+      },
       "icons": {
         "small": "@BasicClanSmallIcon",
         "medium": "@BasicClanMediumIcon",
