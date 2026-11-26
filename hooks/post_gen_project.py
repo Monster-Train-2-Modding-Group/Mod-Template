@@ -91,6 +91,12 @@ features:
       - {{cookiecutter.__project_slug}}.Plugin/textures/character_art/STUB
       - {{cookiecutter.__project_slug}}.Plugin/textures/icons/STUB
       - {{cookiecutter.__project_slug}}.Plugin/textures/relic_art/STUB
+
+- name: enable_harmony_patching
+    enabled: {{cookiecutter.enable_harmony_patching|lower}}
+    inverted: false
+    resources:
+      - {{cookiecutter.__project_slug}}.Plugin/patches
 """
 
 def delete_resources_for_disabled_features():

@@ -2,10 +2,12 @@
 schemaVersion = "0.0.1"
 
 [package]
+# Do not edit namespace or name if using Github actions to publish your mod
 namespace = "{{cookiecutter.mod_namespace}}"
 name = "{{cookiecutter.__project_slug}}"
 versionNumber = "0.1.0"
 description = "{{cookiecutter.description}}"
+# Please change this to a GitHub respository prior to your first release for a way for folks to give feedback.
 websiteUrl = "https://thunderstore.io"
 containsNsfwContent = false
 
@@ -27,6 +29,16 @@ target = ""
 repository = "https://thunderstore.io"
 communities = [ "monster-train-2" ]
 
+# Please categorize your mod for searchabiliity
+#
+# Available categories
+# ---
+# audio, balance, battles, clans, cosmetic, events,
+# libraries, meme, merchants, misc, modpacks,
+# mods, mutators, quality-of-life, tools, translation
+# ui
+#
+# If your mod is ai generated (art/code) please tag it as such "ai-generated"
 [publish.categories]
 monster-train-2 = ["mods"]
 
