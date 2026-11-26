@@ -1,11 +1,11 @@
 ﻿using BepInEx;
 using BepInEx.Logging;
-{% if cookiecutter.enable_harmony_patching == 'yes' %}
-using HarmonyLib;
-{% endif %}
 using TrainworksReloaded.Core;
 using TrainworksReloaded.Core.Extensions;
 using System.Reflection
+{% if cookiecutter.enable_harmony_patching == 'yes' %}
+using HarmonyLib;
+{% endif %}
 
 namespace {{cookiecutter.__project_slug}}.Plugin
 {
@@ -26,7 +26,7 @@ namespace {{cookiecutter.__project_slug}}.Plugin
         public void Awake()
         {
             Logger = base.Logger;
-var builder = Railhead.GetBuilder();
+            var builder = Railhead.GetBuilder();
             builder.Configure(
                 MyPluginInfo.PLUGIN_GUID,
                 c =>
